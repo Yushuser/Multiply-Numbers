@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func multiplyFunction(_ sender: Any) {
-        var firstNumber = Int(txtFirstNumber.text ?? "0") ?? 0
-        var secondNumber = Int(txtSecondNumber.text ?? "0") ?? 0
-        var product = firstNumber * secondNumber
+        let firstNumber = Int(txtFirstNumber.text ?? "0") ?? 0
+        let secondNumber = Int(txtSecondNumber.text ?? "0") ?? 0
+        let product = firstNumber * secondNumber
         lblResult.text = " = " + String(product)
     }
 
